@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  PLANTILLA DE ARTÍCULO
+  1. Copia este archivo a blog/posts/ y ponle un nombre sin espacios ni acentos
+     (ej. blog/posts/integral-de-gauss.html).
+  2. Escribe tu texto dentro de <div class="body"> ... </div>.
+  3. Registra el artículo en blog/posts.js (título, fecha, autor, resumen).
+  El título, la fecha y el autor NO se escriben aquí: salen de posts.js.
+-->
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artículo · La Marea Creciente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/site.css">
+
+<!-- Fórmulas (KaTeX). Inline: \( x^2 \)   En su propia línea: \[ x^2 \] -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.querySelector('.body'),{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+</head>
+<body data-root="../../">
+
+<article class="post">
+  <h1></h1>
+  <p class="meta"></p>
+  <div class="chips"></div>
+
+  <div class="body">
+
+    <p>Empieza aquí. Un párrafo normal.</p>
+
+    <h2>Un subtítulo</h2>
+    <p>Otro párrafo con una fórmula en línea, como \( a^2 + b^2 = c^2 \), y una destacada:</p>
+    \[ \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi} \]
+
+    <blockquote>Una cita o una idea que quieras resaltar.</blockquote>
+
+    <!-- Imágenes: guárdalas en blog/img/ y ponlas así:
+    <figure>
+      <img src="../img/mi-imagen.png" alt="Describe la imagen">
+      <figcaption>Pie de imagen opcional.</figcaption>
+    </figure>
+    -->
+
+  </div>
+</article>
+
+<script src="../posts.js"></script>
+<script src="../../js/site.js"></script>
+</body>
+</html>

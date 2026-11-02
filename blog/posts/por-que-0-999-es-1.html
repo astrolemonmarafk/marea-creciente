@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artículo · La Marea Creciente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/site.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.querySelector('.body'),{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+</head>
+<body data-root="../../">
+
+<article class="post">
+  <h1></h1>
+  <p class="meta"></p>
+  <div class="chips"></div>
+
+  <div class="body">
+
+    <p>Casi todo mundo se pelea con esto la primera vez. Escribes \( 0.999\ldots \) con nueves que no se acaban, y la intuición dice que siempre le falta un poquito para llegar a \( 1 \). Pero son exactamente el mismo número. Vamos con tres formas de verlo, de la más tramposa a la más honesta.</p>
+
+    <h2>1. La de los tercios</h2>
+    <p>Sabemos que \( \tfrac{1}{3} = 0.333\ldots \). Si multiplicas ambos lados por \( 3 \), te queda \( 1 = 0.999\ldots \). Es rápido y convence, pero se apoya en que ya aceptaste que \( \tfrac{1}{3} \) es \( 0.333\ldots \), que es lo mismo que estamos discutiendo.</p>
+
+    <h2>2. La del truco algebraico</h2>
+    <p>Sea \( x = 0.999\ldots \). Entonces \( 10x = 9.999\ldots \), y al restar:</p>
+    \[ 10x - x = 9.999\ldots - 0.999\ldots = 9 \quad\Rightarrow\quad x = 1. \]
+    <p>Funciona, pero está haciendo operaciones con una cantidad infinita de dígitos como si fuera un número cualquiera. Esa es justo la parte que habría que justificar.</p>
+
+    <h2>3. La que dice qué significa escribirlo</h2>
+    <p>Lo que quiere decir \( 0.999\ldots \) es la suma de una serie:</p>
+    \[ 0.999\ldots = \sum_{n=1}^{\infty} \frac{9}{10^n} = \lim_{N\to\infty}\left(1 - \frac{1}{10^N}\right) = 1. \]
+    <p>Las sumas parciales son \( 0.9 \), \( 0.99 \), \( 0.999 \), y así. Se quedan a distancia \( \tfrac{1}{10^N} \) de \( 1 \), y esa distancia se vuelve más chica que cualquier número positivo que me des. Un número que está a distancia menor que cualquier \( \varepsilon > 0 \) de \( 1 \) tiene que ser \( 1 \).</p>
+
+    <blockquote>No es que \( 0.999\ldots \) se acerque a \( 1 \) sin tocarlo. Es que la expresión completa nombra el límite, y el límite es \( 1 \).</blockquote>
+
+    <h2>Entonces, ¿por qué se siente falso?</h2>
+    <p>Porque imaginamos los nueves como algo que se va escribiendo, un proceso que nunca termina. Pero \( 0.999\ldots \) no es el proceso. Es el valor al que ese proceso apunta. Pasa algo parecido con la nuez de la que hablamos en la página principal: no la rompes de un golpe, dejas que el límite haga su trabajo.</p>
+
+  </div>
+</article>
+
+<script src="../posts.js"></script>
+<script src="../../js/site.js"></script>
+</body>
+</html>

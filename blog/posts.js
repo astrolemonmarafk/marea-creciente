@@ -1,0 +1,23 @@
+/* ============================================================
+   Lista de artículos del blog.
+   Para publicar uno nuevo, agrega una entrada AQUÍ (arriba de las demás
+   o donde quieras: se ordenan solas por fecha).
+
+   archivo   → ruta del .html dentro de blog/ (ej. "posts/mi-articulo.html")
+   titulo    → título que se ve en la página y en las tarjetas
+   fecha     → formato AAAA-MM-DD
+   autor     → quien lo escribió
+   resumen   → una o dos frases para la tarjeta
+   etiquetas → lista de temas (opcional)
+   borrador  → pon true para esconderlo de las listas mientras lo escribes
+   ============================================================ */
+window.POSTS = [
+  {
+    archivo: "posts/por-que-0-999-es-1.html",
+    titulo: "¿Por qué 0.999… es igual a 1?",
+    fecha: "2026-11-02",
+    autor: "La Marea Creciente",
+    resumen: "Tres maneras de convencerte de que no es un truco, y qué quiere decir realmente escribir infinitos nueves.",
+    etiquetas: ["análisis", "números reales"]
+  }
+];
