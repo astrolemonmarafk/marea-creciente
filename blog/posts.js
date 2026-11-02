@@ -34,6 +34,17 @@ Lista de etiquetas:
    */
 
   {
+    archivo: "posts/cumple-pi.html",
+    titulo: "Tu cumpleaños en los dígitos de Pi.",
+    fecha: "2026-11-02",
+    autor: "Mariana Garza",
+    resumen: "Encuentra tu cumpleaños en los dígitos de Pi.",
+    etiquetas: ["Matemática recreativa"],
+    borrador: true
+  },
+
+
+  {
     archivo: "posts/alexander-grothendieck.html",
     titulo: "The math that made Alexander Grow them dieck",
     fecha: "2026-11-02",

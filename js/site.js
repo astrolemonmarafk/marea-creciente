@@ -2,8 +2,6 @@
    Marea Creciente · scripts compartidos
    ============================================================ */
 
-/* Número de WhatsApp: código de país + 10 dígitos, sin espacios ni "+".
-   Ejemplo: "525512345678". Cámbialo solo aquí. */
 var WHATSAPP = "528129171483";
 
 (function () {
@@ -62,7 +60,7 @@ var WHATSAPP = "528129171483";
     // cabecera
     var header =
       '<header class="hero mini"><div class="wrap"><nav class="nav" aria-label="Principal">' +
-      '<a class="brand" href="' + root + 'index.html" aria-label="Marea Creciente, inicio">' + LOGO + '<span class="brand-text"><span>Marea Creciente</span><small>Asesorías de matemáticas y física</small></span></a>' +
+      '<a class="brand" href="' + root + 'index.html" aria-label="Marea Creciente, inicio">' + LOGO + '<span class="brand-text"><span>Marea Creciente</span><small>Asesorías de matemáticas </small></span></a>' +
       '<div class="navlinks">' +
       '<a class="navlink" href="' + root + 'index.html#niveles">Asesorías</a>' +
       '<a class="navlink" href="' + root + 'blog/">Blog</a>' +
@@ -74,7 +72,7 @@ var WHATSAPP = "528129171483";
     // pie
     document.body.insertAdjacentHTML(
       "beforeend",
-      '<footer class="site-foot">Marea Creciente · Asesorías de matemáticas y física en línea · © ' +
+      '<footer class="site-foot">Marea Creciente · Asesorías de matemáticas en línea · © ' +
         new Date().getFullYear() + "</footer>"
     );
   }
@@ -148,7 +146,7 @@ var WHATSAPP = "528129171483";
     art.insertAdjacentHTML(
       "afterend",
       '<div class="post-cta"><div class="box"><h3>¿Te quedó una duda, o quieres ir más a fondo?</h3>' +
-        "<p>Damos asesorías en línea de matemáticas y física, de primaria a universidad.</p>" +
+        "<p>Damos asesorías en línea de matemáticas, de primaria a universidad.</p>" +
         '<a class="btn js-wa" href="#" data-msg="Hola, leí \'' + (p ? esc(p.titulo).replace(/'/g, "") : "un artículo") + '\' en el blog y me interesa una asesoría.">' +
         '<svg aria-hidden="true"><use href="#wa"/></svg>Escríbenos por WhatsApp</a></div></div>' +
         '<div class="post-wrap" style="max-width:40em;margin:0 auto"><a class="back" href="' + root + 'blog/">← Todos los artículos</a></div>'
