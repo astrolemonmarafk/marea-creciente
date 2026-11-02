@@ -1,4 +1,4 @@
-# La Marea Creciente
+# Marea Creciente
 
 Landing de asesorías de matemáticas y física, con blog de divulgación. Es un sitio estático: no hay que instalar nada ni correr ningún build. Son archivos HTML, CSS y JS.
 
@@ -12,7 +12,7 @@ blog/index.html       Lista de artículos
 blog/posts.js         Registro de artículos (aquí se dan de alta)
 blog/plantilla.html   Plantilla para artículos nuevos
 blog/posts/           Un .html por artículo
-blog/img/             Imágenes de los artículos
+blog/img/<articulo>/   Imágenes (una carpeta por artículo)
 ```
 
 ## Cambiar el número de WhatsApp
@@ -53,14 +53,36 @@ Usa `\( \)` y no `$ $` para que un precio como "$500" no se confunda con matemá
 
 ### Imágenes
 
-Guárdalas en `blog/img/` y úsalas así dentro del artículo:
+Una carpeta por artículo, con el mismo nombre que el archivo del artículo (sin `.html`):
+
+```
+blog/
+  posts/
+    alexander-grothendieck.html
+    por-que-0-999-es-1.html
+  img/
+    grothendieck/
+      retrato.jpg
+      esquema.png
+    por-que-0-999-es-1/
+      recta.svg
+```
+
+Dentro del artículo se usan así (la ruta siempre empieza con `../img/`):
 
 ```html
 <figure>
-  <img src="../img/mi-imagen.png" alt="Describe la imagen">
-  <figcaption>Pie opcional.</figcaption>
+  <img src="../img/grothendieck/retrato.jpg" alt="Alexander Grothendieck">
+  <figcaption>Crédito y licencia de la foto.</figcaption>
 </figure>
 ```
+
+Consejos:
+- Nombres sin espacios, acentos ni mayúsculas (`mi-grafica.png`, no `Mi Gráfica.PNG`). GitHub Pages distingue mayúsculas.
+- Que cada imagen pese menos de 500 KB. Reduce las fotos antes de subirlas.
+- Para gráficas y diagramas, SVG se ve nítido y pesa poco.
+- Para fotos de personas o libros, revisa la licencia (Wikimedia Commons la indica) y pon el crédito en el pie de la foto.
+- Un `.gitkeep` en una carpeta vacía sirve para que git la conserve.
 
 ### Formato básico
 

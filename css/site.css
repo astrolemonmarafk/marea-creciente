@@ -57,7 +57,7 @@ a{color:inherit}
 .scene{position:relative;width:100%;max-width:380px;aspect-ratio:1;justify-self:center}
 .scene .nut{position:absolute;left:50%;top:6%;width:62%;transform:translateX(-50%);animation:bob 7s ease-in-out infinite;filter:drop-shadow(0 18px 24px rgba(0,0,0,.35))}
 .scene .water{position:absolute;left:-10%;right:-10%;bottom:0;height:52%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent),linear-gradient(180deg,#000 70%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent),linear-gradient(180deg,#000 70%,transparent);mask-composite:intersect}
-.scene .water::before{content:"";position:absolute;inset:0;top:34%;background:linear-gradient(180deg,rgba(15,106,133,.78),rgba(7,32,46,.95))}
+.scene .water::before{content:"";position:absolute;inset:0;top:30%;background:linear-gradient(180deg,rgba(15,106,133,0),rgba(15,106,133,.55) 35%,rgba(7,32,46,.95))}
 .wave{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:drift 14s linear infinite}
 .wave.b{animation-duration:22s;animation-direction:reverse;opacity:.55}
 .wave path{fill:rgba(58,163,194,.55)}
@@ -192,3 +192,9 @@ footer{margin-top:80px;padding-top:24px;border-top:1px solid rgba(182,208,214,.2
 .site-foot{display:block;margin-top:60px;border-top:1px solid var(--line);padding:24px 20px 40px;text-align:center;color:var(--muted);font-size:.9rem}
 @media (max-width:520px){ .navlinks{gap:14px} .navlink{font-size:.92rem} }
 
+
+/* Marca con descriptor */
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text small{font-family:var(--body);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#8FB0B8;margin-top:4px;font-weight:500}
+.hero .eyebrow{color:var(--nut-hi);margin-bottom:16px}
+@media (max-width:520px){.brand-text small{display:none}}

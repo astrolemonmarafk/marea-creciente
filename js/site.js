@@ -1,5 +1,5 @@
 /* ============================================================
-   La Marea Creciente · scripts compartidos
+   Marea Creciente · scripts compartidos
    ============================================================ */
 
 /* Número de WhatsApp: código de país + 10 dígitos, sin espacios ni "+".
@@ -62,11 +62,11 @@ var WHATSAPP = "52XXXXXXXXXX";
     // cabecera
     var header =
       '<header class="hero mini"><div class="wrap"><nav class="nav" aria-label="Principal">' +
-      '<a class="brand" href="' + root + 'index.html" aria-label="La Marea Creciente, inicio">' + LOGO + '<span>La Marea Creciente</span></a>' +
+      '<a class="brand" href="' + root + 'index.html" aria-label="Marea Creciente, inicio">' + LOGO + '<span class="brand-text"><span>Marea Creciente</span><small>Asesorías de matemáticas y física</small></span></a>' +
       '<div class="navlinks">' +
       '<a class="navlink" href="' + root + 'index.html#niveles">Asesorías</a>' +
       '<a class="navlink" href="' + root + 'blog/">Blog</a>' +
-      '<a class="btn js-wa" href="#" data-msg="Hola, vi La Marea Creciente y quiero info sobre las asesorías.">' +
+      '<a class="btn js-wa" href="#" data-msg="Hola, vi Marea Creciente y quiero info sobre las asesorías.">' +
       '<svg aria-hidden="true"><use href="#wa"/></svg><span>Escríbenos por WhatsApp</span></a>' +
       '</div></nav></div>' + SHORE + '</header>';
     var sym = document.querySelector("body > svg");
@@ -74,7 +74,7 @@ var WHATSAPP = "52XXXXXXXXXX";
     // pie
     document.body.insertAdjacentHTML(
       "beforeend",
-      '<footer class="site-foot">La Marea Creciente · Asesorías de matemáticas y física en línea · © ' +
+      '<footer class="site-foot">Marea Creciente · Asesorías de matemáticas y física en línea · © ' +
         new Date().getFullYear() + "</footer>"
     );
   }
@@ -133,7 +133,7 @@ var WHATSAPP = "52XXXXXXXXXX";
     var meta = art.querySelector(".meta");
     var chipsBox = art.querySelector(".chips");
     if (p) {
-      document.title = p.titulo + " · La Marea Creciente";
+      document.title = p.titulo + " · Marea Creciente";
       h1.textContent = p.titulo;
       var palabras = (art.querySelector(".body").textContent || "").trim().split(/\s+/).length;
       var min = Math.max(1, Math.round(palabras / 200));
