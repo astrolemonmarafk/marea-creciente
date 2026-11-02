@@ -4,7 +4,7 @@
 
 /* Número de WhatsApp: código de país + 10 dígitos, sin espacios ni "+".
    Ejemplo: "525512345678". Cámbialo solo aquí. */
-var WHATSAPP = "52XXXXXXXXXX";
+var WHATSAPP = "528129171483";
 
 (function () {
   var root = document.body.getAttribute("data-root") || "";

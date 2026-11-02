@@ -61,7 +61,7 @@ blog/
     alexander-grothendieck.html
     por-que-0-999-es-1.html
   img/
-    grothendieck/
+    alexander-grothendieck/
       retrato.jpg
       esquema.png
     por-que-0-999-es-1/
@@ -72,7 +72,7 @@ Dentro del artículo se usan así (la ruta siempre empieza con `../img/`):
 
 ```html
 <figure>
-  <img src="../img/grothendieck/retrato.jpg" alt="Alexander Grothendieck">
+  <img src="../img/alexander-grothendieck/retrato.jpg" alt="Alexander Grothendieck">
   <figcaption>Crédito y licencia de la foto.</figcaption>
 </figure>
 ```
