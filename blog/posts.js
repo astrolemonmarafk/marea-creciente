@@ -2,24 +2,45 @@
    Lista de artículos del blog.
    Para publicar uno nuevo, agrega una entrada AQUÍ (arriba de las demás
    o donde quieras: se ordenan solas por fecha).
-
-   archivo   → ruta del .html dentro de blog/ (ej. "posts/mi-articulo.html")
-   titulo    → título que se ve en la página y en las tarjetas
-   fecha     → formato AAAA-MM-DD
-   autor     → quien lo escribió
-   resumen   → una o dos frases para la tarjeta
-   etiquetas → lista de temas (opcional)
-   borrador  → pon true para esconderlo de las listas mientras lo escribes
    ============================================================ */
 window.POSTS = [
+
+/*    
+Lista de etiquetas:
+  - Historia
+  - Análisis
+  - Álgebra
+  - Geometría
+  - Topología
+  - Combinatoria
+  - Teoría de números
+  - Probabilidad y estadística
+  - Matemática aplicada
+  - Matemática recreativa
+  - Matemática educativa
+  - Filosofía de la matemática
+  - Matemáticos y matemáticas
+  
+  PLANTILLA:
+  {
+    archivo: "posts/mi-archivo.html",
+    titulo: "titulo tituloso",
+    fecha: "AAAA-MM-DD",
+    autor: "un papu",
+    resumen: blah blah blah",
+    etiquetas: ["", ""] USA EL FORMATO DE ARRIBA, si no ves tu etiqueta, créala y ponla en la lista de arriba.
+    borrador: true QUITA ESTA LINEA CUANDO QUIERAS PUBLICAR EL ARTÍCULO
+  },
+   */
+
   {
     archivo: "posts/alexander-grothendieck.html",
-    titulo: "Quién fue Alexander Grothendieck",
+    titulo: "The math that made Alexander Grow them dieck",
     fecha: "2026-11-02",
-    autor: "Marea Creciente",
+    autor: "Mariana Garza | Elioenai Isidro",
     resumen: "Un niño sin país, un matemático que cambió el idioma de la geometría y la nuez que dio nombre a este proyecto.",
-    etiquetas: ["historia", "Grothendieck"],
-    /*borrador: true*/
+    etiquetas: ["Historia", "Matemáticos y matemáticas"],
+    borrador: true
   },
 
 ];
