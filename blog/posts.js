@@ -19,14 +19,7 @@ window.POSTS = [
     autor: "Marea Creciente",
     resumen: "Un niño sin país, un matemático que cambió el idioma de la geometría y la nuez que dio nombre a este proyecto.",
     etiquetas: ["historia", "Grothendieck"],
-    borrador: true
+    /*borrador: true*/
   },
-  {
-    archivo: "posts/por-que-0-999-es-1.html",
-    titulo: "¿Por qué 0.999… es igual a 1?",
-    fecha: "2026-11-02",
-    autor: "Marea Creciente",
-    resumen: "Tres maneras de convencerte de que no es un truco, y qué quiere decir realmente escribir infinitos nueves.",
-    etiquetas: ["análisis", "números reales"]
-  }
+
 ];
